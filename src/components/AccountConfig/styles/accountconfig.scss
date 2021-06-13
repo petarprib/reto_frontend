@@ -1,0 +1,19 @@
+#accountconfig {
+  @media (min-width: 1025px) {
+    display: flex;
+  }
+}
+
+#background {
+  > img {
+    display: inherit;
+  }
+  @media (max-width: 1024px) {
+    display: none;
+  }
+  @media (min-width: 1025px) {
+    > img {
+      height: 100vh;
+    }
+  }
+}

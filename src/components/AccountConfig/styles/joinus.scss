@@ -1,0 +1,114 @@
+@import "../../../styles/variables";
+
+#joinus {
+  width: 100%;
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  @media (min-width: 1025px) {
+    padding: 50px;
+  }
+}
+
+#joinus-bar {
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 1025px) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 200px;
+  }
+  .login-redirect {
+    color: $green;
+  }
+}
+
+#content-joinus {
+  @media (max-width: 1024px) {
+  }
+  @media (min-width: 1025px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  > div {
+    max-width: 400px;
+    > h1 {
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    > p {
+      margin-bottom: 25px;
+      color: $grey;
+    }
+  }
+}
+
+.account-types {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 15px 10px;
+  height: 85px;
+  display: flex;
+  border-radius: 5px;
+  cursor: pointer;
+  &:first-of-type {
+    margin-bottom: 15px;
+  }
+  &:nth-of-type(2) {
+    margin-bottom: 30px;
+  }
+}
+
+.hovered-type {
+  box-shadow: inset 0 0 0 1px $green;
+}
+
+.pentagon {
+  width: 75px;
+  color: $green;
+  position: relative;
+  > :first-child {
+    font-size: 2.5rem;
+  }
+  > :last-child {
+    color: $green;
+    font-size: 1.2rem;
+  }
+  > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.hovered-pentagon {
+  > :last-child {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.account-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 4;
+  > p:last-of-type {
+    font-size: 0.9rem;
+    color: $grey;
+  }
+  @media (max-width: 1024px) {
+  }
+}
+
+.arrow-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
